@@ -27,11 +27,11 @@
   <filter>
     <description>登录过滤器</description>
     <filter-name>loginFilter</filter-name>
-    <filter-class>com.lovetravel.sys.account.filter.LoginFilter</filter-class>
+    <filter-class>com.itravel.sys.account.filter.LoginFilter</filter-class>
   </filter>
   <filter>
     <filter-name>gZip</filter-name>
-    <filter-class>com.lovetravel.common.filter.GzipFilter</filter-class>
+    <filter-class>com.bkweb.common.filter.GzipFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>gZip</filter-name>
@@ -60,7 +60,7 @@
   </servlet-mapping>
   <filter>
     <filter-name>notFound</filter-name>
-    <filter-class>com.lovetravel.sys.log.filter.NotFoundErrorFilter</filter-class>
+    <filter-class>com.itravel.sys.log.filter.NotFoundErrorFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>notFound</filter-name>
