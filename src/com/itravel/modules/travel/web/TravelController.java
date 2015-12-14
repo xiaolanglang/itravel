@@ -7,10 +7,10 @@ import com.itravel.common.web.BaseController;
 
 @Controller
 @RequestMapping("${travelPath}/sale")
-public class TravelController extends BaseController{
-	
+public class TravelController extends BaseController {
+
 	@RequestMapping("{id}")
-	public String sale(String id){
+	public String sale(String id) {
 		return "sale/sale";
 	}
 }

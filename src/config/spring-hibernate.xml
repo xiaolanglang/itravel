@@ -7,12 +7,7 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-	<context:property-placeholder location="classpath:config/privates/message.properties" />
-
-	<!-- 因为用了Hibernate默认的连接池；默认的连接池真的很有问题 配置文件里增加： <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property> 
-		<property name="c3p0.min_size">5</property>在连接池中可用数据库连接的最小数目 <property name="c3p0.max_size">30</property>在连接池中所有数据库连接的最大数目 
-		<property name="c3p0.time_out">1800</property>设定数据库连接的超时时间 <property name="c3p0.max_statement">50</property>可以被缓存的PreparedStatement的最大数目 -->
-
+	<context:property-placeholder location="classpath:/config/privates/message.properties" />
 
 	<!-- 数据源配置, 使用 BoneCP 数据库连接池 -->
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
@@ -53,7 +48,7 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="mappingDirectoryLocations">
 			<list>
-				<value>classpath:mapper/</value>
+				<value>classpath:/mapper/</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
