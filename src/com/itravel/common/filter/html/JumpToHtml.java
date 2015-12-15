@@ -16,8 +16,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.bkweb.common.httpservlet.MyHttpServletResponseWrapper;
 import com.bkweb.common.utils.FileUtils;
 
-import com.bkweb.common.utils.FileUtils;
-
 public class JumpToHtml implements Filter {
 
 	@Override
