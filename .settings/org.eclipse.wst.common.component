@@ -6,7 +6,7 @@
         <dependent-module archiveName="InfrastructureProjects.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/InfrastructureProjects/InfrastructureProjects">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <property name="context-root" value="/itravel"/>
         <property name="java-output-path" value="/itravel/WebRoot/WEB-INF/classes"/>
+        <property name="context-root" value="/itravel"/>
     </wb-module>
 </project-modules>
