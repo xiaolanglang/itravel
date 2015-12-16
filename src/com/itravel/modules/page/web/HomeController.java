@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.itravel.common.web.BaseController;
 
 @Controller
-@RequestMapping("")
+@RequestMapping({ "${travelPath}", "" })
 public class HomeController extends BaseController {
 
 	@RequestMapping("")
 	public String index() {
-		return "home/index";
+		return "home/index2";
 	}
 
 }
