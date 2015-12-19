@@ -32,7 +32,8 @@
 	<div id="index_content">
 		<!-- 限时优惠 -->
 		<div id="index_content_1">
-			<%@include file="/WEB-INF/views/modules/home/content/xsyh.jsp"%></div>
+			<%@include file="/WEB-INF/views/modules/home/content/xsyh.jsp"%>
+		</div>
 		<div id="index_content_2">
 			<%@include file="/WEB-INF/views/modules/home/content/zbss.jsp"%></div>
 		<div id="index_content_3">
