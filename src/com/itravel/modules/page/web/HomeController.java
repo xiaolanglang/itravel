@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.bkweb.common.utils.hibernatepage.HPage;
 import com.bkweb.modules.tourism.entity.Tourism;
@@ -19,7 +20,16 @@ public class HomeController extends BaseController {
 
 	@RequestMapping("")
 	public String index(Model model) {
-		HPage<Tourism> page = new HPage<Tourism>(1, 8);
+		HPage<Tourism> page = new HPage<Tourism>(1);
+		tourismService.findPageList(new Tourism(), false, page);
+		model.addAttribute("tourismList", page.getList());
+		return "home/index";
+	}
+
+	@RequestMapping("getIndexContent")
+	@ResponseBody
+	public String getIndexContent(Model model) {
+		HPage<Tourism> page = new HPage<Tourism>(1);
 		tourismService.findPageList(new Tourism(), false, page);
 		model.addAttribute("tourismList", page.getList());
 		return "home/index";
