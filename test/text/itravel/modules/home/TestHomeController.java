@@ -20,14 +20,13 @@ import org.springframework.util.Log4jConfigurer;
 import org.springframework.web.context.WebApplicationContext;
 
 import text.itravel.common.MyHandle;
-import text.itravel.common.TestController;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration("WebRoot")
 @ContextConfiguration(locations = { "classpath:config/spring*.xml" })
 @Transactional
 @TransactionConfiguration(defaultRollback = true)
-public class TestHomeController extends TestController {
+public class TestHomeController {
 
 	@Autowired
 	protected WebApplicationContext wac;
@@ -45,7 +44,6 @@ public class TestHomeController extends TestController {
 	}
 
 	@Test
-	// @Rollback(false)
 	public void list() throws Exception {
 		String requestBody = "{\"pageNum\":\"1\"}";
 		String path = "/getIndexContent/";

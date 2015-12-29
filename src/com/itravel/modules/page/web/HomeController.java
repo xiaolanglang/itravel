@@ -28,11 +28,11 @@ public class HomeController extends BaseController {
 
 	@RequestMapping("getIndexContent")
 	@ResponseBody
-	public String getIndexContent(Model model) {
+	public Object getIndexContent(Model model) {
 		HPage<Tourism> page = new HPage<Tourism>(1);
 		tourismService.findPageList(new Tourism(), false, page);
 		model.addAttribute("tourismList", page.getList());
-		return "home/index";
+		return page;
 	}
 
 }
