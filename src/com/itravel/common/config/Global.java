@@ -52,6 +52,13 @@ public class Global extends com.bkweb.common.config.CommonGlobal {
 		return value;
 	}
 
+	/**
+	 * 获取管理端根路径
+	 */
+	public static String getPath() {
+		return getConfig("travelPath");
+	}
+
 	// ///////////////////////////////////////////////////////
 
 	/**

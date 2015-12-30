@@ -1,16 +1,18 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@page import="com.itravel.common.config.Global"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@taglib prefix="msg" uri="http://tzj/message"%>
+<%@page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@page import="com.bktravel.common.config.Global"%>
+<%@include file="/WEB-INF/views/include/taglibs.jsp"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
 			+ path;
-	String cssPath = basePath + "/" + "static/css/";
-	String jsPath = basePath + "/" + "static/js/";
-	String imgPath = basePath + "/" + "static/img/";
-	String filePath = basePath + "/";
-	basePath = basePath + Global.getTravelPath() + "/";
+	String bpath = basePath + "/";
+	String cssPath = bpath + "static/css/";
+	String jsPath = bpath + "static/js/";
+	String imgPath = bpath + "static/img/";
+	String filePath = bpath;
+	String mobileCss=bpath+"static/mobile/css/";
+	String mobileJs=bpath+"static/mobile/js/";
+	String mobileImg=bpath+"static/mobile/img/";
+	basePath = basePath + Global.getPath() + "/";
 %>
 <c:set var="basePath" value="<%=basePath%>" />
