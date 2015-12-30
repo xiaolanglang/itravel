@@ -44,6 +44,16 @@
 		<filter-name>CharacterEncoding</filter-name>
 		<url-pattern>/travel/*</url-pattern>
 	</filter-mapping>
+	<!-- hibernate的session控制 -->
+	<filter>
+		<filter-name>OpenSessionInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.hibernate4.support.OpenSessionInViewFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>OpenSessionInViewFilter</filter-name>
+		<url-pattern>/</url-pattern>
+		<url-pattern>/travel/*</url-pattern>
+	</filter-mapping>
 	<filter>
 		<filter-name>gZip</filter-name>
 		<filter-class>com.bkweb.common.filter.GzipFilter</filter-class>
@@ -51,6 +61,7 @@
 	<filter-mapping>
 		<filter-name>gZip</filter-name>
 		<url-pattern>/travel/*</url-pattern>
+		<url-pattern>/</url-pattern>
 		<url-pattern>*.bmp</url-pattern>
 		<url-pattern>*.css</url-pattern>
 		<url-pattern>*.js</url-pattern>

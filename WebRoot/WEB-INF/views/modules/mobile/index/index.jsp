@@ -91,62 +91,7 @@
 		</div>
 	</div>
 	<div class="width line-top"></div>
-	<div class="width info">
-		<a href="<%=basePath %>order">
-			<div class="title">
-				<span class="h">
-					海南梦幻级度假，畅享海上风情
-					<br>
-					&nbsp;
-					<small>【群岛】海滨国际度假酒店</small>
-				</span>
-			</div>
-			<div class="info-round" >
-				<div class="info-msg">
-					<p>立省￥1000</p>
-					<p class="middle"></p>
-					<p class="strong">￥13000</p>
-					<p class="decoration">￥14000</p>
-				</div>
-				<img src="<%=mImg%>index/round.png" alt="" class="width"></div>
-			<div class=" product-info">
-				<div class="product-extra">
-					<span class="icon icon-team"></span>
-					<span>跟团</span>
-					<span class="separator">|</span>
-					<span>上海出发</span>
-				</div>
-				<img src="<%=mImg%>index/cache/list1.png" class="width"></div>
-		</a>
-	</div>
-	<div class="width info">
-		<a href="<%=basePath %>order">
-			<div class="title">
-				<span class="h">
-					海南梦幻级度假，畅享海上风情
-					<br>
-					&nbsp;
-					<small>【群岛】海滨国际度假酒店</small>
-				</span>
-			</div>
-			<div class="info-round" >
-				<div class="info-msg">
-					<p>立省￥1000</p>
-					<p class="middle"></p>
-					<p class="strong">￥13000</p>
-					<p class="decoration">￥14000</p>
-				</div>
-				<img src="<%=mImg%>index/round.png" alt="" class="width"></div>
-			<div class=" product-info">
-				<div class="product-extra">
-					<span class="icon icon-team"></span>
-					<span>跟团</span>
-					<span class="separator">|</span>
-					<span>上海出发</span>
-				</div>
-				<img src="<%=mImg%>index/cache/list1.png" class="width"></div>
-		</a>
-	</div>
+	<%@include file="/WEB-INF/views/modules/mobile/index/content/productList.jsp" %>
 </body>
 	<%@include file="/WEB-INF/views/include/mobile/js.jsp"%>
 </html>
