@@ -10,11 +10,11 @@
 <body>
 	<div class="contain width">
 		<div class="select width">
-			<div class="width zhanghao selected">帐号登录</div>
-			<!-- <div class="col-5 dongtai">动态密码登录</div> -->
+			<div class="width zhanghao selected col-5">帐号登录</div>
+			<div class="col-5 dongtai">动态密码登录</div>
 		</div>
 		<div class="form">
-			<form action="">
+			<form action="<%=basePath %>login" method="post">
 				<div class="form-bk">
 					<div class="form-group row">
 						<input type="text" class="form-control input-border-none" placeholder="用户名">

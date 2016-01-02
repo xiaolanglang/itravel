@@ -9,13 +9,14 @@
 </head>
 <body>
 	<div class="top width img-line">
-		<img src="<%=mImg%>/order/cache/1.png" class="width"></div>
+		<img src="${tourismImg.url }" class="width"></div>
 	<div class="title width">
 		<p class="top">全国多地直飞三亚5天4晚自由行(入住五星级酒店)</p>
 		<p class="bottom">
 			<span class="bottom-right">
 				<span class="product-price">
-					<span class="price">1190</span>
+					<span class="price"><fmt:formatNumber type="number" value="${tourismImg.tourism.adultPrice*(tourismImg.tourism.discount/10) }"
+							maxFractionDigits="0" /></span>
 					元起
 				</span>
 			</span>
