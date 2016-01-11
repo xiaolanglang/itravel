@@ -1,9 +1,9 @@
 $(function() {
 	var num = 0;
-	var topHeight = $(".top").height();
+	var topHeight = 13/60*window.innerWidth;
 	var screenHeight = window.innerHeight;
 	var columnHeight = screenHeight - topHeight;
-	$(".column").css("height", columnHeight);
+	$(".column").css("height", screenHeight - topHeight);
 	$("#a").attr("src", lt.getBasePath() + "sort/iframepage/left");
 	$("#b").attr("src", lt.getBasePath() + "sort/iframepage/right");
 	document.getElementById("a").onload = function() {
@@ -32,11 +32,14 @@ $(function() {
 		var leftList = data.leftList;
 		for (var i = 0, l = leftList.length; i < l; i++) {
 			if (i == 0) {
-				content += '<li my-data-selected="right-column' + (i + 1) + '" 	class="active">';
+				content += '<li my-data-selected="right-column' + (i + 1)
+						+ '" 	class="active">';
 			} else {
-				content += '<li my-data-selected="right-column' + (i + 1) + '">';
+				content += '<li my-data-selected="right-column' + (i + 1)
+						+ '">';
 			}
-			content += '<a href="javascript:void(0)">' + leftList[i].name + '</a></li>';
+			content += '<a href="javascript:void(0)" class="a-bk">'
+					+ leftList[i].name + '</a></li>';
 		}
 		a$("#left-menu").empty();
 		a$("#left-menu").append(content);
@@ -58,7 +61,6 @@ $(function() {
 		}
 		for ( var p in sorts) {
 			var sortList = sorts[p];
-			console.log(sortList);
 			content += '<div id="' + p + '" class="column-right width">';
 			for (var i = 0, l = sortList.length; i < l; i += 2) {
 				content += '<div class="width right-img">';
@@ -67,14 +69,16 @@ $(function() {
 					content += '<img src="'
 							+ temp.imageUrl
 							+ '"><a href="../second.html" target="_top"><div class="msg1"><p class="text"><span class="strong">'
-							+ temp.name + '</span> <br>' + temp.nameEn + '</p></div></a>';
+							+ temp.name + '</span> <br>' + temp.nameEn
+							+ '</p></div></a>';
 				}
 				temp = sortList[i + 1];
 				if (temp != null) {
 					content += '<img src="'
 							+ temp.imageUrl
 							+ '"><a href="../second.html" target="_top"><div class="msg2"><p class="text"><span class="strong">'
-							+ temp.name + '</span> <br>' + temp.nameEn + '</p></div></a>';
+							+ temp.name + '</span> <br>' + temp.nameEn
+							+ '</p></div></a>';
 				}
 				content += '</div>';
 			}
