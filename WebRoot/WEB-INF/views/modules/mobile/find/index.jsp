@@ -11,7 +11,7 @@
 	<div class="title width">发现<span>·</span>本周精选</div>
 	<c:forEach items="${findList}" var="find">
 		<div class="width column img-line">
-			<a href="<%=basePath %>search">
+			<a href="<%=basePath %>search?content=${find.title }">
 				<img src="${find.image }" class="width">
 				<div class="product-msg">
 					<p>

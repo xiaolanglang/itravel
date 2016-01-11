@@ -16,7 +16,7 @@ body {
 	<%-- <div id="right-column1" class="column-right width">
 		<div class="width right-img">
 			<img src="<%=mImg%>/sort/cache/dj.png">
-			<a href="../second.html" target="_top">
+			<a href="<%=basePath %>search" target="_top">
 				<div class="msg1">
 					<p class="text">
 						<span class="strong">东京</span> <br>Japan
@@ -24,7 +24,7 @@ body {
 				</div>
 			</a>
 			<img src="<%=mImg%>/sort/cache/xg.png">
-			<a href="../second.html" target="_top">
+			<a href="<%=basePath %>search" target="_top">
 				<div class="msg2">
 					<p class="text">
 						<span class="strong">香港</span> <br>HongKong

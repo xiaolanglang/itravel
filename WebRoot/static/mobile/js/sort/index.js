@@ -68,7 +68,7 @@ $(function() {
 				if (temp != null) {
 					content += '<img src="'
 							+ temp.imageUrl
-							+ '"><a href="../second.html" target="_top"><div class="msg1"><p class="text"><span class="strong">'
+							+ '"><a href="'+lt.getBasePath()+'search?content='+temp.name+'" target="_top"><div class="msg1"><p class="text"><span class="strong">'
 							+ temp.name + '</span> <br>' + temp.nameEn
 							+ '</p></div></a>';
 				}
@@ -76,7 +76,7 @@ $(function() {
 				if (temp != null) {
 					content += '<img src="'
 							+ temp.imageUrl
-							+ '"><a href="../second.html" target="_top"><div class="msg2"><p class="text"><span class="strong">'
+							+ '"><a href="'+lt.getBasePath()+'search?content='+temp.name+'" target="_top"><div class="msg2"><p class="text"><span class="strong">'
 							+ temp.name + '</span> <br>' + temp.nameEn
 							+ '</p></div></a>';
 				}

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("${travelPath}/search")
 public class SearchController {
 	@RequestMapping("")
-	public String search(Model model) {
+	public String search(Model model, String content) {
 		return "mobile/search/index";
 	}
 

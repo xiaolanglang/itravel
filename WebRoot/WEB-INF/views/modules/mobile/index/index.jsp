@@ -13,31 +13,31 @@
 	<div class="column">
 		<div class="subcolumn group-justified width">
 			<div class="justified">
-				<a href="<%=basePath %>search">
+				<a href="<%=basePath %>search?content=跟团游">
 					<img src="<%=mImg%>index/icon_home_group.png">
 					<span class="text-response width">跟团游</span>
 				</a>
 			</div>
 			<div class="justified">
-				<a href="<%=basePath %>search">
+				<a href="<%=basePath %>search?content=自驾游">
 					<img src="<%=mImg%>index/icon_home_drive.png">
 					<span class="text-response width">自驾游</span>
 				</a>
 			</div>
 			<div class="justified">
-				<a href="<%=basePath %>search">
+				<a href="<%=basePath %>search?content=游轮">
 					<img src="<%=mImg%>index/icon_home_ship.png">
 					<span class="text-response width">游轮</span>
 				</a>
 			</div>
 			<div class="justified">
-				<a href="<%=basePath %>search">
+				<a href="<%=basePath %>search?content=自助游">
 					<img src="<%=mImg%>index/icon_home_self_service.png">
 					<span class="text-response width">自助游</span>
 				</a>
 			</div>
 			<div class="justified">
-				<a href="<%=basePath %>search">
+				<a href="<%=basePath %>search?content=门票">
 					<img src="<%=mImg%>index/icon_home_ticket.png">
 					<span class="text-response width">门票</span>
 				</a>
@@ -45,31 +45,31 @@
 		</div>
 		<div class="subcolumn group-justified">
 			<div class="justified">
-				<a href="<%=basePath %>search">
+				<a href="<%=basePath %>search?content=酒店">
 					<img src="<%=mImg%>index/icon_home_hotel.png">
 					<span class="text-response width">酒店</span>
 				</a>
 			</div>
 			<div class="justified">
-				<a href="<%=basePath %>search">
+				<a href="<%=basePath %>search?content=签证">
 					<img src="<%=mImg%>index/icon_home_visa.png">
 					<span class="text-response width">签证</span>
 				</a>
 			</div>
 			<div class="justified">
-				<a href="<%=basePath %>search">
+				<a href="<%=basePath %>search?content=飞机票">
 					<img src="<%=mImg%>index/ic_product_type_jipiao.png">
 					<span class="text-response width">飞机票</span>
 				</a>
 			</div>
 			<div class="justified">
-				<a href="<%=basePath %>search">
+				<a href="<%=basePath %>search?content=火车票">
 					<img src="<%=mImg%>index/icon_home_train_ticket.png">
 					<span class="text-response width">火车票</span>
 				</a>
 			</div>
 			<div class="justified">
-				<a href="<%=basePath %>search">
+				<a href="<%=basePath %>search?content=理财">
 					<img src="<%=mImg%>index/icon_home_finance.png">
 					<span class="text-response width">理财</span>
 				</a>
@@ -78,15 +78,15 @@
 	</div>
 	<div class="guanggao group-justified line-top img-line">
 		<div class="line-right justified">
-			<a href="<%=basePath %>search">
+			<a href="<%=basePath %>search?content=周边游">
 				<img src="<%=mImg%>index/cache/column-top1.png"></a>
 		</div>
 		<div class="line-right justified">
-			<a href="<%=basePath %>search">
+			<a href="<%=basePath %>search?content=出境游">
 				<img src="<%=mImg%>index/cache/column-top2.png"></a>
 		</div>
 		<div class="line-right justified">
-			<a href="<%=basePath %>search">
+			<a href="<%=basePath %>search?content=当地玩乐">
 				<img src="<%=mImg%>index/cache/column-top3.png"></a>
 		</div>
 	</div>
