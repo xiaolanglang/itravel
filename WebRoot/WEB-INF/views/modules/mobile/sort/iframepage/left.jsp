@@ -13,11 +13,6 @@
 <body class="width height">
 	<div class="column-left width">
 		<ul class="nav" id="left-menu">
-			<c:forEach items="${list}" var="sort" varStatus="status">
-				<li my-data-selected="right-column${status.index + 1 }">
-					<a href="javascript:void(0)">${sort.name }</a>
-				</li>
-			</c:forEach>
 		</ul>
 	</div>
 </body>

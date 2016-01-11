@@ -13,7 +13,7 @@ body {
 </style>
 </head>
 <body class="width height" style="background-color: #EEEEEE">
-	<div id="right-column1" class="column-right width" style="display: block;">
+	<%-- <div id="right-column1" class="column-right width">
 		<div class="width right-img">
 			<img src="<%=mImg%>/sort/cache/dj.png">
 			<a href="../second.html" target="_top">
@@ -32,129 +32,7 @@ body {
 				</div>
 			</a>
 		</div>
-		<div class="width right-img">
-			<img src="<%=mImg%>/sort/cache/dj.png">
-			<a href="../second.html" target="_top">
-				<div class="msg1">
-					<p class="text">
-						<span class="strong">东京</span> <br>Japan
-					</p>
-				</div>
-			</a>
-			<img src="<%=mImg%>/sort/cache/xg.png">
-			<a href="../second.html" target="_top">
-				<div class="msg2">
-					<p class="text">
-						<span class="strong">香港</span> <br>HongKong
-					</p>
-				</div>
-			</a>
-		</div>
-		<div class="width right-img">
-			<img src="<%=mImg%>/sort/cache/dj.png">
-			<a href="../second.html" target="_top">
-				<div class="msg1">
-					<p class="text">
-						<span class="strong">东京</span> <br>Japan
-					</p>
-				</div>
-			</a>
-			<img src="<%=mImg%>/sort/cache/xg.png">
-			<a href="../second.html" target="_top">
-				<div class="msg2">
-					<p class="text">
-						<span class="strong">香港</span> <br>HongKong
-					</p>
-				</div>
-			</a>
-		</div>
-		<div class="width right-img">
-			<img src="<%=mImg%>/sort/cache/dj.png">
-			<a href="../second.html" target="_top">
-				<div class="msg1">
-					<p class="text">
-						<span class="strong">东京</span> <br>Japan
-					</p>
-				</div>
-			</a>
-			<img src="<%=mImg%>/sort/cache/xg.png">
-			<a href="../second.html" target="_top">
-				<div class="msg2">
-					<p class="text">
-						<span class="strong">香港</span> <br>HongKong
-					</p>
-				</div>
-			</a>
-		</div>
-	</div>
-	<div id="right-column2" class="column-right width">
-		<div class="width right-img">
-			<img src="<%=mImg%>/sort/cache/dj.png">
-			<a href="../second.html" target="_top">
-				<div class="msg1">
-					<p class="text">
-						<span class="strong">东京</span> <br>Japan
-					</p>
-				</div>
-			</a>
-			<img src="<%=mImg%>/sort/cache/xg.png">
-			<a href="../second.html" target="_top">
-				<div class="msg2">
-					<p class="text">
-						<span class="strong">香港</span> <br>HongKong
-					</p>
-				</div>
-			</a>
-		</div>
-		<div class="width right-img">
-			<img src="<%=mImg%>/sort/cache/dj.png">
-			<a href="../second.html" target="_top">
-				<div class="msg1">
-					<p class="text">
-						<span class="strong">东京</span> <br>Japan
-					</p>
-				</div>
-			</a>
-			<img src="<%=mImg%>/sort/cache/xg.png">
-			<a href="../second.html" target="_top">
-				<div class="msg2">
-					<p class="text">
-						<span class="strong">香港</span> <br>HongKong
-					</p>
-				</div>
-			</a>
-		</div>
-		<div class="width right-img">
-			<img src="<%=mImg%>/sort/cache/dj.png">
-			<a href="../second.html" target="_top">
-				<div class="msg1">
-					<p class="text">
-						<span class="strong">东京</span> <br>Japan
-					</p>
-				</div>
-			</a>
-		</div>
-	</div>
-	<div id="right-column3" class="column-right width">
-		<div class="width right-img">
-			<img src="<%=mImg%>/sort/cache/dj.png">
-			<a href="../second.html" target="_top">
-				<div class="msg1">
-					<p class="text">
-						<span class="strong">东京</span> <br>Japan
-					</p>
-				</div>
-			</a>
-			<img src="<%=mImg%>/sort/cache/xg.png">
-			<a href="../second.html" target="_top">
-				<div class="msg2">
-					<p class="text">
-						<span class="strong">香港</span> <br>HongKong
-					</p>
-				</div>
-			</a>
-		</div>
-	</div>
+	</div> --%>
 </body>
 <%@include file="/WEB-INF/views/include/mobile/js.jsp"%>
 </html>

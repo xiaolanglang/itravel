@@ -58,7 +58,7 @@
 
 		mj.extend({
 			getBasePath : function(type) {
-				return basePath("admin/");
+				return basePath("travel/");
 			},
 			getCssPath : function() {
 				return basePath("static/css/");

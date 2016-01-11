@@ -10,9 +10,6 @@
 	String jsPath = bpath + "static/js/";
 	String imgPath = bpath + "static/img/";
 	String filePath = bpath;
-	String mobileCss=bpath+"static/mobile/css/";
-	String mobileJs=bpath+"static/mobile/js/";
-	String mobileImg=bpath+"static/mobile/img/";
 	basePath = basePath + Global.getPath() + "/";
 %>
 <c:set var="basePath" value="<%=basePath%>" />

@@ -4,3 +4,4 @@
 	});
 </script>
 <script type="text/javascript" src="<%=mJs%>common/zepto.min.js"></script>
+<script type="text/javascript" src="<%=bpath%>static/js/modules/common/lt.js"></script>
