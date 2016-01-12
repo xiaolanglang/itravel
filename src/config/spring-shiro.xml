@@ -5,7 +5,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
 	<context:property-placeholder ignore-unresolvable="true"
-		location="classpath:/config/privates/bkweb.properties" />
+		location="classpath:/config/privates/message.properties" />
 
 	<!-- Shiro权限过滤过滤器定义 -->
 	<!-- “/authenticated.jsp = authc”表示访问该地址用户必须身份验证通过（Subject. isAuthenticated()==true）；而“/** = user”表示访问该地址的用户是身份验证通过或RememberMe登录的都可以。 -->
@@ -14,9 +14,10 @@
 			<value>
 				/static/** = anon
 				/file/** = anon
-				/login = authc
-				/logout = logout
-				${adminPath}/** = user
+				${travelPath}/login = authc
+				${travelPath}/logout = logout
+				${travelPath}/mine = anon
+				${travelPath}/mine/** = user
 			</value>
 		</constructor-arg>
 	</bean>
