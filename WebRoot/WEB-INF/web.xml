@@ -27,6 +27,8 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	
+	<!-- 字符编码 -->
 	<filter>
 		<filter-name>CharacterEncoding</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -43,6 +45,21 @@
 		<filter-name>CharacterEncoding</filter-name>
 		<url-pattern>/travel/*</url-pattern>
 	</filter-mapping>
+	
+	<!-- shiro权限 -->
+	<filter>
+		<filter-name>shiroFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+		<init-param>
+			<param-name>targetFilterLifecycle</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>shiroFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
 	<!-- hibernate的session控制 -->
 	<filter>
 		<filter-name>OpenSessionInViewFilter</filter-name>
@@ -53,6 +70,8 @@
 		<url-pattern>/</url-pattern>
 		<url-pattern>/travel/*</url-pattern>
 	</filter-mapping>
+
+	<!-- gzip压缩功能 -->
 	<filter>
 		<filter-name>gZip</filter-name>
 		<filter-class>com.bkweb.common.filter.GzipFilter</filter-class>
@@ -65,6 +84,8 @@
 		<url-pattern>*.css</url-pattern>
 		<url-pattern>*.js</url-pattern>
 	</filter-mapping>
+
+	<!-- 找不到拦截器 -->
 	<filter>
 		<filter-name>notFound</filter-name>
 		<filter-class>com.itravel.sys.log.filter.NotFoundErrorFilter</filter-class>
@@ -75,6 +96,7 @@
 		<dispatcher>ERROR</dispatcher>
 	</filter-mapping>
 
+	<!-- springmvc拦截器 -->
 	<servlet>
 		<servlet-name>springMVC</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
