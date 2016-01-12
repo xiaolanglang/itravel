@@ -21,9 +21,9 @@ public class OrderController extends BaseController {
 	private TourismImgService tourismImgService;
 
 	@RequestMapping("")
-	public String order(Model model, Tourism tourism) {
+	public String order(Model model, String id) {
 		TourismImg tourismImg = new TourismImg();
-		tourismImg.setTourism(tourism);
+		tourismImg.setTourism(new Tourism(id));
 		tourismImg.setType(DictData.img_type_2);
 		List<TourismImg> list = tourismImgService.findList(tourismImg, false, "tourism");
 		model.addAttribute("tourismImg", list.get(0));

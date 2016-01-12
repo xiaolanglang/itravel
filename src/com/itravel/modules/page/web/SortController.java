@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.bkweb.modules.menu.entity.MenuSort;
 import com.bkweb.modules.menu.service.MenuSortService;
+import com.bkweb.modules.tourism.service.TourismService;
 import com.itravel.common.web.BaseController;
 
 @Controller
@@ -20,6 +21,9 @@ public class SortController extends BaseController {
 
 	@Autowired
 	private MenuSortService menuSortService;
+
+	@Autowired
+	private TourismService tourismService;
 
 	@RequestMapping("")
 	public String sort(Model model) {
@@ -45,8 +49,15 @@ public class SortController extends BaseController {
 		return map;
 	}
 
-	@RequestMapping("second")
-	public String sortsecond(Model model) {
+	@RequestMapping("search")
+	public String search(Model model, String content, Integer pageNum) {
+		tourismService.searchSortPageList(model, content, pageNum, false);
+		return "mobile/sort/second";
+	}
+
+	@RequestMapping("searchproduct")
+	public String searchProduct(Model model, String content, Integer pageNum) {
+		tourismService.searchSortPageList(model, content, pageNum, false);
 		return "mobile/sort/second";
 	}
 

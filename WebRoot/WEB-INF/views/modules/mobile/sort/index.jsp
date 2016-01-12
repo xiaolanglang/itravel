@@ -10,7 +10,7 @@
 <body>
 	<div class="top width img-line">
 		<img src="<%=mImg%>/sort/cache/top.png" class="width">
-		<form action="" class="form">
+		<form action="<%=basePath %>search" class="form">
 			<input type="text" class="search form-control input-border-none" placeholder="搜索目的地、国家、城市">
 		</form>
 	</div>

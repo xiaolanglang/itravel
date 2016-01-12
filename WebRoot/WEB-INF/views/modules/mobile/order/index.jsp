@@ -11,7 +11,7 @@
 	<div class="top width img-line">
 		<img src="${tourismImg.url }" class="width"></div>
 	<div class="title width">
-		<p class="top">全国多地直飞三亚5天4晚自由行(入住五星级酒店)</p>
+		<p class="top">${tourismImg.tourism.subtitle }</p>
 		<p class="bottom">
 			<span class="bottom-right">
 				<span class="product-price">

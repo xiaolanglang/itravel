@@ -37,7 +37,7 @@
 				</a>
 			</div>
 			<div class="justified">
-				<a href="<%=basePath %>search?content=门票">
+				<a href="<%=basePath %>search?content=">
 					<img src="<%=mImg%>index/icon_home_ticket.png">
 					<span class="text-response width">门票</span>
 				</a>
@@ -45,31 +45,31 @@
 		</div>
 		<div class="subcolumn group-justified">
 			<div class="justified">
-				<a href="<%=basePath %>search?content=酒店">
+				<a href="<%=basePath %>search?content=">
 					<img src="<%=mImg%>index/icon_home_hotel.png">
 					<span class="text-response width">酒店</span>
 				</a>
 			</div>
 			<div class="justified">
-				<a href="<%=basePath %>search?content=签证">
+				<a href="<%=basePath %>search?content=">
 					<img src="<%=mImg%>index/icon_home_visa.png">
 					<span class="text-response width">签证</span>
 				</a>
 			</div>
 			<div class="justified">
-				<a href="<%=basePath %>search?content=飞机票">
+				<a href="<%=basePath %>search?content=">
 					<img src="<%=mImg%>index/ic_product_type_jipiao.png">
 					<span class="text-response width">飞机票</span>
 				</a>
 			</div>
 			<div class="justified">
-				<a href="<%=basePath %>search?content=火车票">
+				<a href="<%=basePath %>search?content=">
 					<img src="<%=mImg%>index/icon_home_train_ticket.png">
 					<span class="text-response width">火车票</span>
 				</a>
 			</div>
 			<div class="justified">
-				<a href="<%=basePath %>search?content=理财">
+				<a href="<%=basePath %>search?content=">
 					<img src="<%=mImg%>index/icon_home_finance.png">
 					<span class="text-response width">理财</span>
 				</a>

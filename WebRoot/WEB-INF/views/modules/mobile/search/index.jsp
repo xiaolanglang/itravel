@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="search width">
-		<form action="" class="form form-search col-7">
+		<form action="<%=basePath %>search" class="form form-search col-7" method="post">
 			<a href="<%=basePath %>search/position">
 				<div class="col-3 position text-middle">
 					<p class="text-content">
@@ -18,101 +18,29 @@
 				</div>
 			</a>
 			<div class="col-7 line-left search-line-left">
-				<input type="text" placeholder="目的地\关键词" class="form-control input-border-none">
+				<input type="text" placeholder="目的地\关键词" class="form-control input-border-none" name="content" value="${requestScope.content }">
 				<span class="glyphicon glyphicon-search"></span>
 			</div>
 		</form>
 	</div>
-	<a href="<%=basePath %>order" class="a-bk">
-		<div class="column width">
-			<img src="<%=mImg%>/search/cache/1.png" class="col-3">
-			<div class="msg">
-				<div class="msg-top overflow-2">跟团游-重返微商之路-轻装一天 穿越户外经典</div>
-				<div class="msg-middle">
-					<div>手机专享</div>
-					<div>热门</div>
+	<c:forEach items="${page.list }" var="tourismImg">
+		<a href="<%=basePath %>order?id=${tourismImg.tourism.id}" class="a-bk">
+			<div class="column width">
+				<img src="${tourismImg.url}" class="col-3">
+				<div class="msg">
+					<div class="msg-top overflow-2">${tourismImg.tourism.subtitle}</div>
+					<div class="msg-middle">
+						<div>手机专享</div>
+						<div>热门</div>
+					</div>
+					<div class="msg-bottom">月销32笔</div>
+					<div class="msg-price strong">￥<fmt:formatNumber type="number" value="${tourismImg.tourism.adultPrice*(tourismImg.tourism.discount/10) }"
+							maxFractionDigits="0" /></div>
 				</div>
-				<div class="msg-bottom">月销32笔</div>
-				<div class="msg-price strong">￥1900</div>
 			</div>
-		</div>
-	</a>
-	<div class="line-top"></div>
-	<a href="<%=basePath %>order" class="a-bk">
-		<div class="column width">
-			<img src="<%=mImg%>/search/cache/1.png" class="col-3">
-			<div class="msg">
-				<div class="msg-top overflow-2">跟团游-重返微商之路-轻装一天 穿越户外经典</div>
-				<div class="msg-middle">
-					<div>手机专享</div>
-					<div>热门</div>
-				</div>
-				<div class="msg-bottom">月销32笔</div>
-				<div class="msg-price strong">￥1900</div>
-			</div>
-		</div>
-	</a>
-	<div class="line-top"></div>
-	<a href="<%=basePath %>order" class="a-bk">
-		<div class="column width">
-			<img src="<%=mImg%>/search/cache/1.png" class="col-3">
-			<div class="msg">
-				<div class="msg-top overflow-2">跟团游-重返微商之路-轻装一天 穿越户外经典</div>
-				<div class="msg-middle">
-					<div>手机专享</div>
-					<div>热门</div>
-				</div>
-				<div class="msg-bottom">月销32笔</div>
-				<div class="msg-price strong">￥1900</div>
-			</div>
-		</div>
-	</a>
-	<div class="line-top"></div>
-	<a href="<%=basePath %>order" class="a-bk">
-		<div class="column width">
-			<img src="<%=mImg%>/search/cache/1.png" class="col-3">
-			<div class="msg">
-				<div class="msg-top overflow-2">跟团游-重返微商之路-轻装一天 穿越户外经典</div>
-				<div class="msg-middle">
-					<div>手机专享</div>
-					<div>热门</div>
-				</div>
-				<div class="msg-bottom">月销32笔</div>
-				<div class="msg-price strong">￥1900</div>
-			</div>
-		</div>
-	</a>
-	<div class="line-top"></div>
-	<a href="<%=basePath %>order" class="a-bk">
-		<div class="column width">
-			<img src="<%=mImg%>/search/cache/1.png" class="col-3">
-			<div class="msg">
-				<div class="msg-top overflow-2">跟团游-重返微商之路-轻装一天 穿越户外经典</div>
-				<div class="msg-middle">
-					<div>手机专享</div>
-					<div>热门</div>
-				</div>
-				<div class="msg-bottom">月销32笔</div>
-				<div class="msg-price strong">￥1900</div>
-			</div>
-		</div>
-	</a>
-	<a href="<%=basePath %>order" class="a-bk">
-	<div class="line-top"></div>
-		<div class="column width">
-			<img src="<%=mImg%>/search/cache/1.png" class="col-3">
-			<div class="msg">
-				<div class="msg-top overflow-2">跟团游-重返微商之路-轻装一天 穿越户外经典</div>
-				<div class="msg-middle">
-					<div>手机专享</div>
-					<div>热门</div>
-				</div>
-				<div class="msg-bottom">月销32笔</div>
-				<div class="msg-price strong">￥1900</div>
-			</div>
-		</div>
-	</a>
-	<div class="line-top"></div>
+		</a>
+		<div class="line-top"></div>
+	</c:forEach>
 </body>
 	<%@include file="/WEB-INF/views/include/mobile/js.jsp"%>
 </html>
