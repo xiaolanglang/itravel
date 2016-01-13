@@ -25,8 +25,8 @@
 	<!-- 安全认证过滤器 -->
 	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
 		<property name="securityManager" ref="securityManager" />
-		<property name="loginUrl" value="/login" />
-		<property name="successUrl" value="/" />
+		<property name="loginUrl" value="${travelPath}/login" />
+		<property name="successUrl" value="${travelPath}/mine" />
 		<property name="unauthorizedUrl" value="/" />
 		<property name="filters">
 			<map>

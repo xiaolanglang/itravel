@@ -17,12 +17,12 @@
 			<form action="<%=basePath %>login" method="post">
 				<div class="form-bk">
 					<div class="form-group row">
-						<input type="text" class="form-control input-border-none" placeholder="用户名">
+						<input type="text" class="form-control input-border-none" placeholder="用户名" name="username">
 						<span class="glyphicon glyphicon-user icon"></span>
 					</div>
 					<div class="line-top width"></div>
 					<div class="form-group row">
-						<input type="password" class="form-control input-border-none" placeholder="密码">
+						<input type="password" class="form-control input-border-none" placeholder="密码" name="password">
 						<span class="icon-lock icon"></span>
 					</div>
 				</div>
