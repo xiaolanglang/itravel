@@ -13,7 +13,7 @@
 	<div class="column">
 		<div class="subcolumn group-justified width">
 			<div class="justified">
-				<a href="<%=basePath %>search?content=跟团游">
+				<a href="<%=basePath %>search?content=跟团游" target="_blank">
 					<img src="<%=mImg%>index/icon_home_group.png">
 					<span class="text-response width">跟团游</span>
 				</a>

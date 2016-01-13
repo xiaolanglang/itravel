@@ -20,5 +20,5 @@
 	</div>
 </body>
 	<%@include file="/WEB-INF/views/include/mobile/js.jsp"%>
-	<script type="text/javascript" src="<%=mJs%>sort/index.js"></script>
+	<script type="text/javascript" src="<%=mJs%>modules/sort/index.js"></script>
 </html>

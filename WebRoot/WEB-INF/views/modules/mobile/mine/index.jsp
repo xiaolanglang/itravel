@@ -12,10 +12,20 @@
 	<div class="top width img-line">
 		<img src="<%=mImg%>/mine/bk.png" class="width bk">
 		<div class="head">
-			<a href="<%=basePath %>login" class="highlight-none">
-				<img src="<%=mImg%>/mine/human.png" class="img">
-			</a>
-			<p>点击登录，体验更多精彩</p>
+			<c:choose>
+				<c:when test="${user != null }">
+					<a href="javascript:void(0)" class="highlight-none">
+						<img src="<%=mImg%>/mine/human.png" class="img">
+					</a>
+					<p>您好,${user.name}</p>
+				</c:when>
+				<c:otherwise>
+					<a href="<%=basePath %>login" class="highlight-none">
+						<img src="<%=mImg%>/mine/human.png" class="img">
+					</a>
+					<p>点击登录，体验更多精彩</p>
+				</c:otherwise>
+			</c:choose>
 		</div>
 	</div>
 	<div class="column">
@@ -32,6 +42,11 @@
 			<li class="line-bottom">
 				<a href="##" class="safety a-bk">账户安全</a>
 			</li>
+			<c:if test="${user != null }">
+				<li class="line-bottom">
+					<a href="<%=basePath %>loginout" class="safety a-bk">退出登录</a>
+				</li>
+			</c:if>
 		</ul>
 	</div>
 </body>

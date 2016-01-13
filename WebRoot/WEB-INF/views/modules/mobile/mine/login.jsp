@@ -15,6 +15,7 @@
 		</div>
 		<div class="form">
 			<form action="<%=basePath %>login" method="post">
+				<input type="hidden" name="rememberMe" value="true">
 				<div class="form-bk">
 					<div class="form-group row">
 						<input type="text" class="form-control input-border-none" placeholder="用户名" name="username">
@@ -39,5 +40,12 @@
 		</div>
 	</div>
 </body>
-	<%@include file="/WEB-INF/views/include/mobile/js.jsp"%>
+	<script type="text/javascript">
+		document.body.addEventListener('touchstart', function() {
+		});
+	</script>
+	<script type="text/javascript" src="<%=mJs%>common/jquery_1.7.2.js"></script>
+	<script type="text/javascript" src="<%=bpath%>static/js/modules/common/lt.js"></script>
+	<script type="text/javascript" src="<%=mJs%>common/jquery.form.min.js"></script>
+	<script type="text/javascript" src="<%=mJs%>modules/mine/login/login.js"></script>
 </html>
