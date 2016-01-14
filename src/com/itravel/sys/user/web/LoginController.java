@@ -41,8 +41,9 @@ public class LoginController extends BaseController {
 	}
 
 	@RequestMapping(value = "${travelPath}/loginout")
-	public String loginOut(Model model) {
+	@ResponseBody
+	public Object loginOut(Model model) {
 		AccountUtils.getSubject().logout();
-		return "redirect:" + adminPath + "/mine";
+		return new Result("200", "succsee");
 	}
 }

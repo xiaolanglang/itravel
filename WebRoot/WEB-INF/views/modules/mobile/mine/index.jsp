@@ -42,13 +42,14 @@
 			<li class="line-bottom">
 				<a href="##" class="safety a-bk">账户安全</a>
 			</li>
-			<c:if test="${user != null }">
-				<li class="line-bottom">
-					<a href="<%=basePath %>loginout" class="safety a-bk">退出登录</a>
-				</li>
-			</c:if>
 		</ul>
 	</div>
+	<c:if test="${user != null }">
+		<div class="loginout width">
+			退出登录
+		</div>
+	</c:if>
 </body>
 	<%@include file="/WEB-INF/views/include/mobile/js.jsp"%>
+	<script type="text/javascript" src="<%=mJs%>modules/mine/index/index.js"></script>
 </html>
