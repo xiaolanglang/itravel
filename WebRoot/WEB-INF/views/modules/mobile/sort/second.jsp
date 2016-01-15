@@ -18,7 +18,7 @@
 			</c:if>
 			<a href="<%=basePath%>order?id=${tourismImg.tourism.id}">
 				<div class="col-5 column-img-left img-line">
-					<img class="width" src="${tourismImg.url}">
+					<img class="width imglazy" data-original="${tourismImg.url}">
 					<div class="msg width overflow-2">${tourismImg.tourism.subtitle}</div>
 					<div class="line-top"></div>
 					<div class="msg-bottom">

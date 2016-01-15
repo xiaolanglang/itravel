@@ -6,7 +6,7 @@
 <c:forEach items="${page.list }" var="tourismImg">
 	<a href="<%=basePath %>order?id=${tourismImg.tourism.id}" class="a-bk">
 		<div class="column width">
-			<img src="${tourismImg.url}" class="col-3">
+			<img data-original="${tourismImg.url}" class="col-3 imglazy">
 			<div class="msg">
 				<div class="msg-top overflow-2">${tourismImg.tourism.subtitle}</div>
 				<div class="msg-middle">
