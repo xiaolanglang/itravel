@@ -27,7 +27,7 @@
 				<img src="<%=mImg%>index/round.png" alt="" class="width">
 			</div>
 			<div class=" product-info">
-				<img data-original="${tourismImg.url }" class="width imglazy">
+				<img src="<%=mImg%>index/product.png" data-original="${tourismImg.url }" class="width imglazy">
 			</div>
 		</a>
 	</div>

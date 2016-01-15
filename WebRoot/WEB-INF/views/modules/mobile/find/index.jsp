@@ -12,7 +12,7 @@
 	<c:forEach items="${findList}" var="find">
 		<div class="width column img-line">
 			<a href="<%=basePath %>search?content=${find.title }">
-				<img data-original="${find.image }" class="width imglazy">
+				<img data-original="${find.image }" class="width imglazy" src="<%=mImg%>find/product.png">
 				<div class="product-msg">
 					<p>
 						<span class="span-line strong">|</span>
