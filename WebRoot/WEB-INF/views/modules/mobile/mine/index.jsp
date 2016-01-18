@@ -10,18 +10,18 @@
 </head>
 <body>
 	<div class="top width img-line">
-		<img src="<%=mImg%>/mine/bk.png" class="width bk">
+		<img src="<%=mImg%>mine/bk.png" class="width bk">
 		<div class="head">
 			<c:choose>
 				<c:when test="${user != null }">
 					<a href="javascript:void(0)" class="highlight-none">
-						<img src="<%=mImg%>/mine/human.png" class="img">
+						<img src="<%=mImg%>mine/human.png" class="img">
 					</a>
 					<p>您好,${user.name}</p>
 				</c:when>
 				<c:otherwise>
 					<a href="<%=basePath %>login" class="highlight-none">
-						<img src="<%=mImg%>/mine/human.png" class="img">
+						<img src="<%=mImg%>mine/human.png" class="img">
 					</a>
 					<p>点击登录，体验更多精彩</p>
 				</c:otherwise>

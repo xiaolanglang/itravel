@@ -31,7 +31,7 @@
 					<a href="##" class="find">找回密码</a>
 				</div>
 				<div class="form-group row">
-					<input type="submit" class="form-control input-border-none" value="登录">
+					<input id="submit" type="submit" class="form-control input-border-none" value="登录">
 				</div>
 				<div class="form-group row">
 					<input type="button" class="form-control input-border-none add" value="注册新用户">
@@ -45,7 +45,7 @@
 		});
 	</script>
 	<script type="text/javascript" src="<%=mJs%>common/jquery_1.7.2.js"></script>
-	<script type="text/javascript" src="<%=bpath%>static/js/modules/common/lt.js"></script>
+	<script type="text/javascript" src="<%=mJs%>modules/common/lt.js"></script>
 	<script type="text/javascript" src="<%=mJs%>common/jquery.form.min.js"></script>
 	<script type="text/javascript" src="<%=mJs%>modules/mine/login/login.js"></script>
 </html>
