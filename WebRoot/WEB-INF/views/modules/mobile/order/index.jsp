@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="top width img-line">
-		<img src="${tourismImg.url }" class="width"></div>
+		<img data-original="${tourismImg.url }" src="<%=mImg%>order/product.png" class="width imglazy"></div>
 	<div class="title width">
 		<p class="top">${tourismImg.tourism.subtitle }</p>
 		<p class="bottom">

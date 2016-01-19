@@ -8,8 +8,16 @@ $(function() {
 				window.opener = null;
 				window.open('', '_self');
 				window.close();
-			} else {
+			} else{
 				$submit.removeAttr("disabled").removeAttr("style");
+				new jBox("Notice", {
+					content: data.message,
+					position: {
+						x: "center",
+						y: "center"
+					},
+					autoClose: 2000
+				});
 			}
 		});
 		return false;

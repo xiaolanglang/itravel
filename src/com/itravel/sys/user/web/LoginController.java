@@ -50,7 +50,7 @@ public class LoginController extends BaseController {
 		if (principal != null) {
 			return new Result("200", "success");
 		}
-		return new Result("500", "failed");
+		return new Result("500", "用户名或者密码错误");
 	}
 
 	@RequestMapping(value = "${travelPath}/loginout")
