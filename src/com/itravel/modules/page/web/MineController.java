@@ -1,5 +1,7 @@
 package com.itravel.modules.page.web;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,8 +25,13 @@ public class MineController extends BaseController {
 		Principal principal = AccountUtils.getPrincipal();
 		if (principal != null) {
 			User user = new User(AccountUtils.getAccount());
-			user = userService.findList(user, false, "account").get(0);
-			model.addAttribute("user", user);
+			List<User> list = userService.findList(user, false, "account");
+			if (list != null && list.size() > 0) {
+				user = list.get(0);
+				model.addAttribute("user", user);
+			} else {
+				AccountUtils.getSubject().logout();
+			}
 		}
 		return "mobile/mine/index";
 	}

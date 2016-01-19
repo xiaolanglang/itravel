@@ -5,20 +5,21 @@
 <head>
 	<title>用户登录</title>
 	<%@include file="/WEB-INF/views/include/mobile/header.jsp"%>
+	<link rel="stylesheet" type="text/css" href="<%=mJs%>common/jBox/jBox.css">
 	<link rel="stylesheet" type="text/css" href="<%=mCss %>mine/login.css">
 </head>
 <body>
 	<div class="contain width">
-		<div class="select width">
+		<div id="top" class="select width">
 			<div class="width zhanghao selected col-5">帐号登录</div>
 			<div class="col-5 dongtai">动态密码登录</div>
 		</div>
 		<div class="form">
-			<form action="<%=basePath %>login" method="post">
+			<form id="form1" action="<%=basePath %>login" method="post">
 				<input type="hidden" name="rememberMe" value="true">
 				<div class="form-bk">
 					<div class="form-group row">
-						<input type="text" class="form-control input-border-none" placeholder="用户名" name="username">
+						<input type="text" class="form-control input-border-none" placeholder="手机号" name="username">
 						<span class="glyphicon glyphicon-user icon"></span>
 					</div>
 					<div class="line-top width"></div>
@@ -34,18 +35,41 @@
 					<input id="submit" type="submit" class="form-control input-border-none" value="登录">
 				</div>
 				<div class="form-group row">
-					<input type="button" class="form-control input-border-none add" value="注册新用户">
+					<input id="add" type="button" class="form-control input-border-none add" value="注册新用户">
+				</div>
+			</form>
+			<form id="form2" action="<%=basePath %>register" method="post" style="display: none">
+				<div class="form-bk">
+					<div class="form-group row">
+						<input id="name" type="text" class="form-control input-border-none" placeholder="请输入用户名" name="name">
+						<span class="glyphicon glyphicon-user icon"></span>
+					</div>
+					<div class="line-top width"></div>
+					<div class="form-group row">
+						<input id="username" type="text" class="form-control input-border-none" placeholder="请输入手机号" name="username">
+						<span class="glyphicon glyphicon-phone icon"></span>
+					</div>
+					<div class="line-top width"></div>
+					<div class="form-group row">
+						<input id="password" type="password" class="form-control input-border-none" placeholder="请输入密码" name="password">
+						<span class="glyphicon glyphicon-lock icon"></span>
+					</div>
+					<div class="line-top width"></div>
+					<div class="form-group row">
+						<input id="confirmpassword" type="password" class="form-control input-border-none" placeholder="请确认密码">
+						<span class="glyphicon glyphicon-lock icon"></span>
+					</div>
+					<div class="line-top width"></div>
+				</div>
+				<div class="form-group row" style="margin-top: 60px;">
+					<input id="register" type="submit" class="form-control input-border-none add" value="注册并登录">
 				</div>
 			</form>
 		</div>
 	</div>
 </body>
-	<script type="text/javascript">
-		document.body.addEventListener('touchstart', function() {
-		});
-	</script>
-	<script type="text/javascript" src="<%=mJs%>common/jquery_1.7.2.js"></script>
-	<script type="text/javascript" src="<%=mJs%>modules/common/lt.js"></script>
+	<%@include file="/WEB-INF/views/include/mobile/js.jsp"%>
+	<script type="text/javascript" src="<%=mJs%>common/jBox/jBox.min.js"></script>
 	<script type="text/javascript" src="<%=mJs%>common/jquery.form.min.js"></script>
 	<script type="text/javascript" src="<%=mJs%>modules/mine/login/login.js"></script>
 </html>
