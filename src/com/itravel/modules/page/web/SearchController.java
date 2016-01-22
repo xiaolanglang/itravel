@@ -5,14 +5,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.bkweb.modules.tourism.service.TourismService;
+import com.bkweb.modules.tourism.service.CTourismService;
 
 @Controller
 @RequestMapping("${travelPath}/search")
 public class SearchController {
 
 	@Autowired
-	private TourismService tourismService;
+	private CTourismService tourismService;
 
 	@RequestMapping("")
 	public String search(Model model, String content, Integer pageNum) {

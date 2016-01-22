@@ -13,7 +13,7 @@ import org.springframework.util.Log4jConfigurer;
 
 import com.bkweb.common.utils.hibernatepage.HPage;
 import com.bkweb.modules.tourism.entity.Tourism;
-import com.bkweb.modules.tourism.service.TourismService;
+import com.bkweb.modules.tourism.service.CTourismService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath:config/spring-*.xml" })
@@ -21,7 +21,7 @@ import com.bkweb.modules.tourism.service.TourismService;
 public class TestHibernateWithSpring {
 
 	@Autowired
-	private TourismService tourismService;
+	private CTourismService tourismService;
 
 	@Before
 	public void before() {

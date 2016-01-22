@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.bkweb.modules.menu.entity.MenuFind;
-import com.bkweb.modules.menu.service.MenuFindService;
+import com.bkweb.modules.menu.service.CMenuFindService;
 import com.itravel.common.web.BaseController;
 
 @Controller
@@ -14,7 +14,7 @@ import com.itravel.common.web.BaseController;
 public class FindController extends BaseController {
 
 	@Autowired
-	private MenuFindService menuFindService;
+	private CMenuFindService menuFindService;
 
 	@RequestMapping("")
 	public String find(Model model) {

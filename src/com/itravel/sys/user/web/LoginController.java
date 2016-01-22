@@ -11,7 +11,7 @@ import com.bkweb.common.util.AccountUtils;
 import com.bkweb.common.utils.Encodes;
 import com.bkweb.common.web.Result;
 import com.bkweb.sys.account.entity.Account;
-import com.bkweb.sys.account.service.AccountService;
+import com.bkweb.sys.account.service.CAccountService;
 import com.bkweb.sys.security.SystemAuthorizingRealm.Principal;
 import com.bkweb.sys.security.UsernamePasswordToken;
 import com.bkweb.sys.user.entity.User;
@@ -23,7 +23,7 @@ import com.itravel.common.web.BaseController;
 public class LoginController extends BaseController {
 
 	@Autowired
-	private AccountService accountService;
+	private CAccountService accountService;
 
 	@Autowired
 	private UserService userService;

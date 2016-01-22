@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.bkweb.common.utils.dict.DictData;
 import com.bkweb.modules.tourism.entity.Tourism;
 import com.bkweb.modules.tourism.entity.TourismImg;
-import com.bkweb.modules.tourism.service.TourismImgService;
+import com.bkweb.modules.tourism.service.CTourismImgService;
 import com.itravel.common.web.BaseController;
 
 @Controller
@@ -18,7 +18,7 @@ import com.itravel.common.web.BaseController;
 public class OrderController extends BaseController {
 
 	@Autowired
-	private TourismImgService tourismImgService;
+	private CTourismImgService tourismImgService;
 
 	@RequestMapping("")
 	public String order(Model model, String id) {

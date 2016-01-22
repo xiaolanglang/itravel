@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.bkweb.common.utils.dict.DictData;
 import com.bkweb.common.utils.hibernatepage.HPage;
 import com.bkweb.modules.tourism.entity.TourismImg;
-import com.bkweb.modules.tourism.service.TourismImgService;
-import com.bkweb.modules.tourism.service.TourismService;
+import com.bkweb.modules.tourism.service.CTourismImgService;
+import com.bkweb.modules.tourism.service.CTourismService;
 import com.itravel.common.web.BaseController;
 
 @Controller
@@ -17,10 +17,10 @@ import com.itravel.common.web.BaseController;
 public class IndexController extends BaseController {
 
 	@Autowired
-	private TourismService tourismService;
+	private CTourismService tourismService;
 
 	@Autowired
-	private TourismImgService tourismImgService;
+	private CTourismImgService tourismImgService;
 
 	@RequestMapping("")
 	public String index(Model model) {
