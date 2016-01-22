@@ -15,7 +15,7 @@ import com.bkweb.sys.account.service.CAccountService;
 import com.bkweb.sys.security.SystemAuthorizingRealm.Principal;
 import com.bkweb.sys.security.UsernamePasswordToken;
 import com.bkweb.sys.user.entity.User;
-import com.bkweb.sys.user.service.UserService;
+import com.bkweb.sys.user.service.CUserService;
 import com.itravel.common.web.BaseController;
 
 @Controller
@@ -26,7 +26,7 @@ public class LoginController extends BaseController {
 	private CAccountService accountService;
 
 	@Autowired
-	private UserService userService;
+	private CUserService userService;
 
 	@RequestMapping(value = "${travelPath}/loginresult")
 	@ResponseBody

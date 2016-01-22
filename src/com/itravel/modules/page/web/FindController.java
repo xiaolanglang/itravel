@@ -6,15 +6,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.bkweb.modules.menu.entity.MenuFind;
-import com.bkweb.modules.menu.service.CMenuFindService;
 import com.itravel.common.web.BaseController;
+import com.itravel.modules.menu.service.MenuFindService;
 
 @Controller
 @RequestMapping("${travelPath}/find")
 public class FindController extends BaseController {
 
 	@Autowired
-	private CMenuFindService menuFindService;
+	private MenuFindService menuFindService;
 
 	@RequestMapping("")
 	public String find(Model model) {

@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.bkweb.common.util.AccountUtils;
 import com.bkweb.sys.security.SystemAuthorizingRealm.Principal;
 import com.bkweb.sys.user.entity.User;
-import com.bkweb.sys.user.service.UserService;
 import com.itravel.common.web.BaseController;
+import com.itravel.sys.user.service.UserService;
 
 @Controller
 @RequestMapping("${travelPath}/mine")

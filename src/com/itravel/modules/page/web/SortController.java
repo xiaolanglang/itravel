@@ -11,19 +11,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.bkweb.modules.menu.entity.MenuSort;
-import com.bkweb.modules.menu.service.CMenuSortService;
-import com.bkweb.modules.tourism.service.CTourismService;
 import com.itravel.common.web.BaseController;
+import com.itravel.modules.menu.service.MenuSortService;
+import com.itravel.modules.tourism.service.TourismService;
 
 @Controller
 @RequestMapping("${travelPath}/sort")
 public class SortController extends BaseController {
 
 	@Autowired
-	private CMenuSortService menuSortService;
+	private MenuSortService menuSortService;
 
 	@Autowired
-	private CTourismService tourismService;
+	private TourismService tourismService;
 
 	@RequestMapping("")
 	public String sort(Model model) {
