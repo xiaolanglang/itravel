@@ -92,7 +92,7 @@
 	</filter>
 	<filter-mapping>
 		<filter-name>notFound</filter-name>
-		<url-pattern>/WEB-INF/views/error/404.jsp</url-pattern>
+		<url-pattern>/WEB-INF/views/modules/mobile/error/index.jsp</url-pattern>
 		<dispatcher>ERROR</dispatcher>
 	</filter-mapping>
 

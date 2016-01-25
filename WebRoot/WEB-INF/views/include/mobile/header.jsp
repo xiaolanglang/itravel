@@ -10,4 +10,13 @@
 <meta content="telephone=no, address=no" name="format-detection">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?db1cacd086eb38e40d0296ad9012c026";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 <link rel="stylesheet" type="text/css" href="<%=mCss%>common/style.css">
